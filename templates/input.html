@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Credit Score Prediction</title>
+    <link rel="stylesheet" href="/static/css/input.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="http://127.0.0.1:5500/templates/index.html">HOME</a>
+            <a href="http://127.0.0.1:5500/templates/about.html">ABOUT</a>
+            <a href="http://127.0.0.1:5500/templates/cs_education.html">CREDIT SCORE EDUCATION</a>
+            <a href="http://127.0.0.1:5500/templates/cs_range.html">CREDIT SCORE RANGE</a>
+        </div>
+        <div class="input form">
+            <form action="/prediction" method="post" id="input head">
+                <h1>Credit Score Classifier</h1>
+                <br>
+                <label for="Annual_Income">Annual Income :</label>
+                <input type="number" id="Annual_Income" name="Annual_Income"  required><br>
+                
+                <label for="Monthly_Inhand_Salary">Monthly Inhand Salary  :</label>
+                <input type="number" id="Monthly_Inhand_Salary" name="Monthly_Inhand_Salary"  required><br>
+              
+                <label for="Amount_invested_monthly">Amount Invested Monthly :</label>
+                <input type="number" id="Amount_invested_monthly" name="Amount_invested_monthly"  required><br>
+                
+                <label for="Outstanding_Debt">Outstanding Debt  :</label>
+                <input type="number" id="Outstanding_Debt" name="Outstanding_Debt"  required><br>
+               
+                <label for="Total_EMI_per_month">Total EMI per month :</label>
+                <input type="number" id="Total_EMI_per_month" name="Total_EMI_per_month"  required><br>
+                
+                <label for="Interest_Rate">Interest Rate :</label>
+                <input type="number" id="Interest_Rate" name="Interest_Rate" required><br>
+                
+                <label for="Delay_from_due_date">Delay from due date :</label>
+                <input type="number" id="Delay_from_due_date" name="Delay_from_due_date" required><br>
+                
+                <label for="Num_Credit_Inquiries">No. of Credit Inquiries :</label>
+                <input type="number" id="Num_Credit_Inquiries" name="Num_Credit_Inquiries" required><br>
+                
+                <label for="Num_Credit_Card">No. of Credit Cards :</label>
+                <input type="number" id="Num_Credit_Card" name="Num_Credit_Card" required><br>
+                
+                <label for="Num_Bank_Accounts">No. of Bank Accounts :</label>
+                <input type="number" id="Num_Bank_Accounts" name="Num_Bank_Accounts" required><br>
+                
+                <label for="Credit_Mix">Credit Mix :</label>
+                <select type="text" name="Credit_Mix" id="Credit_Mix">
+                    <option value="invalid">select</option>
+                    <option value="Good">Good</option>
+                    <option value="Standard">Standard</option>
+                    <option value="Bad">Bad</option>
+                    </select>
+                <br>
+                
+                
+                <button id="submit" type="submit" class="submit">Predict</button>
+            </form>
+        
+        </div>
+    </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,79 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    
+    
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.navbar{
+    margin-top: 2%;
+    text-align: center;
+    flex: 1;
+}
+.navbar a{
+    padding: 6px 20px;
+    text-decoration: none;
+    color: rgb(88, 9, 9);
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.input form {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    width: 400px;
+    height: auto; 
+    margin: -150px 0 0 -200px;
+    text-align: left; 
+}
+label {
+    display: inline-block; 
+    width: 200px;
+    text-align: right; 
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    margin-bottom: 10px; 
+}
+
+label{
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+h1{
+    color: rgb(230, 103, 65);
+    font-family: 'Times New Roman', Times, serif;
+}
+.submit{
+    position: absolute;
+    margin-top: 26%; 
+    right: 44%;
+    background-color: rgb(230, 103, 65);
+    color: black;
+    border: 2px;
+    border-radius: 4px;
+    width: 80px;
+    height: 20px;
+    font-family: Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+#submit:hover{
+    background-color: rgb(17, 77, 17);
+    color: white;
+    transition: .5s ease-in-out;
+    font-family: Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
