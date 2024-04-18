@@ -19,13 +19,13 @@ def about():
     return render_template('about.html')
 
 
-@app.route('/cs_education')
-def cs_education():
-    return render_template('cs_education.html')
+@app.route('/cseducation')
+def cseducation():
+    return render_template('cseducation.html')
 
-@app.route('/cs_range')
-def cs_range():
-    return render_template('cs_range.html')
+@app.route('/csrange')
+def csrange():
+    return render_template('csrange.html')
 
 @app.route('/input')
 def input():
