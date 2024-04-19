@@ -84,8 +84,8 @@ def predicted():
              numerical_features = ['Annual_Income', 'Monthly_Inhand_Salary', 'Amount_invested_monthly',
                           'Outstanding_Debt', 'Total_EMI_per_month', 'Delay_from_due_date']
 
-             prediction_values[numerical_features] = scalar.fit(prediction_values[numerical_features])
-             scaled_data = scalar.transform(score_predictdf[numerical_features])
+             #prediction_values[numerical_features] = scalar.fit(prediction_values[numerical_features])
+             scaled_data = scalar.transform(score_predictdf[numerical_features].values)
              
              scaled_df = pd.DataFrame(scaled_data, columns=numerical_features)
 
